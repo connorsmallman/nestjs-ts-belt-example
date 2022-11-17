@@ -3,7 +3,7 @@ import { GetUserUseCase } from "../../usecases/GetUserUseCase";
 import { UserDTO } from "../../dtos/UserDTO";
 import { R, pipe } from '@mobily/ts-belt';
 
-@Controller()
+@Controller("users")
 export class UserController {
     constructor(private readonly getUserUseCase: GetUserUseCase) {}
 
